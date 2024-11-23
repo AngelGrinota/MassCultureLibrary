@@ -9,5 +9,6 @@ namespace MassCultureLibrary.Animes
         Task<Anime?> GetAnimeByIdAsync(Guid animeId);
         Task<IEnumerable<Anime>> GetAnimeByStatusAsync(string status);
         Task<Anime> UpdateAnimeAsync(Guid animeId, AnimeUpdateDto updateInfo);
+        Task<string> UpdateAnimeNameAsync(string name);
     }
 }
